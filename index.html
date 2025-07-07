@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturebloom Organics - Pure, Natural & Organic Skincare for Radiant Skin</title>
+    <meta name="description" content="Discover Naturebloom Organics: your source for pure, natural, and organic skincare products. Embrace radiant, healthy, glowing skin with our eco-friendly, chemical-free, sustainable, vegan, cruelty-free, herbal, plant-based formulations. Shop organic face serums, natural cleansing balms, revitalizing night creams & more.">
+    <meta name="keywords" content="organic skincare, natural skincare, pure skincare, vegan skincare, cruelty-free skincare, eco-friendly skincare, sustainable skincare, skincare products, organic beauty, natural beauty, organic face serum, natural cleansing balm, organic night cream, herbal skincare, plant-based skincare, radiant skin, healthy skin, glowing skin, nourishing skincare, gentle skincare, chemical-free skincare, Naturebloom Organics, Naturebloom skincare">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAF5; /* Very light green/off-white */
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        .hero-section {
+            background-image: url('https://placehold.co/1920x800/D0E0D0/333333?text=Naturebloom+Organics+Hero'); /* Light green background with text */
+            background-size: cover;
+            background-position: center top; /* Position background text at the top */
+            min-height: 80vh; /* Responsive height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+        .hero-overlay {
+            background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white overlay */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* Ensure overlay is behind the text content */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2; /* Ensure text content is above the overlay */
+            padding-top: 4rem; /* Increased top padding to ensure H1 visibility */
+            padding-bottom: 8rem; /* Increased bottom padding to push content up */
+            padding-left: 2rem; /* Keep horizontal padding */
+            padding-right: 2rem; /* Keep horizontal padding */
+            border-radius: 1rem;
+            max-width: 4xl;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-heading {
+            color: #5A8D6E; /* A slightly darker green for headings */
+        }
+        .btn-primary {
+            background-color: #8CC080; /* A pleasant light green */
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px; /* Fully rounded */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            background-color: #6E9F60; /* Darker green on hover */
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: #8CC080;
+            border: 2px solid #8CC080;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .btn-secondary:hover {
+            background-color: #8CC080;
+            color: white;
+            transform: translateY(-2px);
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .smooth-transition {
+            transition: all 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-in {
+            animation: slideInUp 1s ease-out forwards;
+            opacity: 0; /* Start hidden */
+        }
+        /* Delay animations for staggered effect */
+        .animate-slide-in:nth-child(1) { animation-delay: 0.2s; }
+        .animate-slide-in:nth-child(2) { animation-delay: 0.4s; }
+        .animate-slide-in:nth-child(3) { animation-delay: 0.6s; }
+        .animate-slide-in:nth-child(4) { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 flex justify-between items-center fixed w-full z-10 rounded-b-lg smooth-transition">
+        <div class="text-2xl font-bold text-green-700">Naturebloom Organics</div>
+        <nav class="space-x-4">
+            <a href="#" class="text-gray-600 hover:text-green-700 smooth-transition">Home</a>
+            <a href="products.html" class="text-gray-600 hover:text-green-700 smooth-transition">Products</a>
+            <a href="contact.html" class="text-gray-600 hover:text-green-700 smooth-transition">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section relative overflow-hidden">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 section-heading animate-slide-in">
+                Naturebloom Organics: Pure & Natural Skincare for Radiant Skin
+            </h1>
+            <p class="text-base md:text-lg mt-12 mb-6 text-black leading-normal animate-slide-in" style="animation-delay: 0.4s;">
+                Explore our exquisite range of organic skincare, crafted with the purest ingredients from nature.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 animate-slide-in" style="animation-delay: 0.8s;">
+                <a href="products.html" class="btn-primary">Explore Our Products</a>
+                <a href="contact.html" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-6 md:px-12 bg-white rounded-lg mx-auto my-8 max-w-7xl shadow-lg smooth-transition animate-slide-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10 section-heading">Our Philosophy: Sustainable & Organic Skincare</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                At Naturebloom Organics, we believe in the power of nature to nurture your skin. We meticulously select
+                the finest organic ingredients, free from harsh chemicals, to create skincare solutions that are
+                effective, gentle, and sustainable. Our commitment is to your well-being and the planet.
+            </p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 card animate-slide-in">
+                    <img src="https://placehold.co/100x100/E0F2E0/5A8D6E?text=🌿" alt="Pure Natural Ingredients" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Pure & Organic Ingredients</h3>
+                    <p class="text-gray-600">Sourced directly from nature, ensuring the highest quality for your skin.</p>
+                </div>
+                <div class="p-6 card animate-slide-in" style="animation-delay: 0.3s;">
+                    <img src="https://placehold.co/100x100/E0F2E0/5A8D6E?text=🌱" alt="Eco-Friendly Skincare" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Eco-Conscious Skincare</h3>
+                    <p class="text-gray-600">Sustainable practices from farm to bottle, protecting our planet.</p>
+                </div>
+                <div class="p-6 card animate-slide-in" style="animation-delay: 0.6s;">
+                    <img src="https://placehold.co/100x100/E0F2E0/5A8D6E?text=✨" alt="Radiant Healthy Skin" class="mx-auto mb-4 rounded-full">
+                    <h3 class="text-xl font-semibold mb-4 text-green-700">Achieve Radiant, Healthy Skin</h3>
+                    <p class="text-gray-600">Experience healthy, glowing skin naturally with our effective formulas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="py-16 px-6 md:px-12 bg-[#F8FAF5] rounded-lg mx-auto my-8 max-w-7xl shadow-lg smooth-transition animate-slide-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 section-heading">Shop Naturebloom Organics Bestsellers: Organic Skincare Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="p-6 card animate-slide-in">
+                    <img src="https://placehold.co/400x300/C8E6C9/5A8D6E?text=Hydrating+Serum" alt="Organic Hydrating Serum" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">Organic Hydrating Serum</h3>
+                    <p class="text-gray-600 mb-4">Deeply moisturizes and revitalizes skin with hyaluronic acid and rosehip oil.</p>
+                    <span class="text-xl font-bold text-green-700">$39.99</span>
+                    <button class="mt-4 w-full btn-primary">View Product</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="p-6 card animate-slide-in" style="animation-delay: 0.3s;">
+                    <img src="https://placehold.co/400x300/C8E6C9/5A8D6E?text=Cleansing+Balm" alt="Gentle Organic Cleansing Balm" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">Gentle Cleansing Balm</h3>
+                    <p class="text-gray-600 mb-4">Melts away impurities and makeup, leaving skin soft and clean.</p>
+                    <span class="text-xl font-bold text-green-700">$24.50</span>
+                    <button class="mt-4 w-full btn-primary">View Product</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="p-6 card animate-slide-in" style="animation-delay: 0.6s;">
+                    <img src="https://placehold.co/400x300/C8E6C9/5A8D6E?text=Revitalizing+Cream" alt="Revitalizing Organic Night Cream" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-800">Revitalizing Night Cream</h3>
+                    <p class="text-gray-600 mb-4">Nourishes and repairs skin overnight for a youthful glow.</p>
+                    <span class="text-xl font-bold text-green-700">$49.00</span>
+                    <button class="mt-4 w-full btn-primary">View Product</button>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="products.html" class="btn-primary text-lg">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 px-6 md:px-12 bg-white rounded-lg mx-auto my-8 max-w-7xl shadow-lg smooth-transition animate-slide-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8 section-heading">Transform Your Skin with Naturebloom Organics</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                Join our community and embark on a journey to healthier, more beautiful skin with our organic skincare solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="products.html" class="btn-primary text-lg">Shop Now</a>
+                <a href="contact.html" class="btn-secondary text-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-8 px-6 md:px-12 text-center rounded-t-lg smooth-transition">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Naturebloom Organics. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-green-200 smooth-transition">Privacy Policy</a>
+                <a href="#" class="hover:text-green-200 smooth-transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
